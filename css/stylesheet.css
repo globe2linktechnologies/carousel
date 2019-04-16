@@ -1,0 +1,631 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+body{
+  height: 100%;
+  width: 100%;
+}
+a,img {
+  text-decoration: none;
+  color: #fff;
+}
+ul{
+  list-style: none;
+}
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  font-size:16px;
+}
+@media screen and (min-width:1200px){
+  header{
+    height: 70px;
+    width: 1366px;
+    margin: auto;
+    background: black;
+    display: flex;
+    align-items: center;
+  }
+  nav ul{
+    display: flex;
+    margin-left: 20px;
+  }
+  nav ul li a{
+    margin-right: 15px;
+    color: gray;
+  }
+  nav ul li a:hover{
+    color: white;
+  }
+
+  .btn{
+    display: none;
+  }
+  header h1 {
+    color: white;
+    font-size: 22px;
+    margin-right: 10px;
+    padding-left: 50px;
+  }
+  .head{
+    display: flex;
+  }
+  input{
+    margin-right: 20px;
+    height: 25px;
+    float: right;
+  }
+  .input{
+    width: 100%;
+  }
+  ::placeholder{
+    padding-left: 15px;
+  }
+  .button{
+    background-color: transparent;
+    color: green;
+    border-color: green;
+    height: 30px;
+    cursor: pointer;
+    float: right;
+    width: 60px;
+    margin-right: 120px;
+  }
+  .banner{
+    width: 1366px;
+    margin: auto;
+    height: 500px;
+    background-color: gray;
+    text-align: center;
+    align-items: center;
+  }
+
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  .prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  .mySlides{
+    display: none;
+  }
+  .banner h1{
+    padding-top: 180px;
+    color: white;
+  }
+  .banner p{
+    height: 50px;
+    width: 700px;
+    padding-left: 340px;
+    margin-top: 10px;
+    color: white;
+  }
+  .banner button{
+    background-color: royalblue;
+    border-width: 0px;
+    color: white;
+    height: 40px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 100px;
+  }
+  .eve{
+    height: 360px;
+    width: 1366px;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin: auto;
+    display: flex;
+    text-align: center;
+  }
+  .eve article{
+    height: 300px;
+    width: 300px;
+    padding: 70px 30px 20px 15px;
+  }
+  .eve article:first-child{
+    padding-left: 180px;
+  }
+  .eve article img{
+    height: 120px;
+  }
+  .eve h2{
+    color: gray;
+    font-size: 20px;
+  }
+  .eve p{
+    color: gray;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  .eve article button{
+    height: 30px;
+    width: 100px;
+    margin-top: 10px;
+    color: gray;
+    cursor: pointer;
+  }
+  .icons{
+    height: 1020px;
+    width: 1366px;
+    margin: auto;
+  }
+  .icon {
+    display: flex;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-top: 50px;
+
+  }
+  .icon h2{
+    color: gray;
+    font-size: 38px;
+    padding-top: 70px;
+  }
+  .icon p{
+    color: gray;
+    font-size: 14px;
+  }
+  .img1{
+    padding-left: 100px;
+  }
+  .img2{
+    padding-right: 100px;
+  }
+  .img3{
+    padding-left: 100px;
+  }
+  .img4{
+    display: none;
+  }
+  .footer{
+    height: 10px;
+    width: 1366px;
+    margin: auto;
+    display: flex;
+    padding-top: 50px
+  }
+  .footer div{
+    display: flex;
+    margin-left: 200px;
+  }
+  .pvt{
+    color: royalblue;
+  }
+  .footer p:last-child a{
+    padding-left: 400px;
+    color: royalblue;
+  }
+}
+@media screen and (min-width:769px) and (max-width:1199px) {
+  header{
+    height: 70px;
+    width: 100%;
+    margin: auto;
+    background: black;
+    display: flex;
+    align-items: center;
+  }
+  nav ul{
+    display: flex;
+    margin-left: 20px;
+  }
+  nav ul li a{
+    margin-right: 15px;
+    color: gray;
+  }
+  nav ul li a:hover{
+    color: white;
+  }
+
+  .btn{
+    display: none;
+  }
+  header h1 {
+    color: white;
+    font-size: 22px;
+    margin-right: 10px;
+    padding-left: 50px;
+  }
+  .head{
+    display: flex;
+  }
+  input{
+    margin-right: 20px;
+    height: 25px;
+    float: right;
+  }
+  .input{
+    width: 100%;
+  }
+  ::placeholder{
+    padding-left: 15px;
+  }
+  .button{
+    background-color: transparent;
+    color: green;
+    border-color: green;
+    height: 30px;
+    cursor: pointer;
+    float: right;
+    width: 60px;
+    margin-right: 80px;
+  }
+  .banner{
+    width: 100%;
+    margin: auto;
+    height: 500px;
+    background-color: gray;
+    text-align: center;
+    align-items: center;
+  }
+
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  .prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  .mySlides{
+    display: none;
+  }
+  .banner h1{
+    padding-top: 180px;
+    color: white;
+  }
+  .banner p{
+    height: 70px;
+    width: 550px;
+    margin-left: 160px;
+    margin-top: 10px;
+    color: white;
+  }
+  .banner button{
+    background-color: royalblue;
+    border-width: 0px;
+    color: white;
+    height: 40px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 100px;
+  }
+  .eve{
+    height: 400px;
+    width: 100%;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin: auto;
+    display: flex;
+    text-align: center;
+  }
+  .eve article{
+    height: 300px;
+    width: 300px;
+    padding: 70px 30px 20px 15px;
+  }
+  .eve article:first-child{
+    padding-left: 50px;
+  }
+  .eve article img{
+    height: 120px;
+  }
+  .eve h2{
+    color: gray;
+    font-size: 20px;
+  }
+  .eve p{
+    color: gray;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  .eve article button{
+    height: 30px;
+    width: 100px;
+    margin-top: 10px;
+    color: gray;
+    cursor: pointer;
+  }
+  .icons{
+    width: 100%;
+    margin: auto;
+  }
+  .icon {
+    display: flex;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 50px;
+
+  }
+  .icon h2{
+    color: gray;
+    font-size: 38px;
+    padding-top: 70px;
+  }
+  .icon p{
+    color: gray;
+    font-size: 14px;
+  }
+  .img1{
+    padding-left: 100px;
+  }
+  .img2{
+    padding-right: 100px;
+  }
+  .img3{
+    padding-left: 100px;
+  }
+  .img4{
+    display: none;
+  }
+  .footer{
+    height: 10px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    padding-top: 50px
+  }
+  .footer div{
+    display: flex;
+    margin-left: 100px;
+  }
+  .pvt{
+    color: royalblue;
+  }
+  .footer p:last-child a{
+    padding-left: 200px;
+    color: royalblue;
+  }
+}
+
+@media screen and (max-width:768px) {
+  header{
+    height: 50px;
+    width: 100%;
+    margin: auto;
+    background: black;
+    display: flex;
+    align-items: center;
+  }
+  nav ul{
+    display: flex;
+    margin-left: 50px;
+  }
+  nav ul li{
+    display: none;
+  }
+  .btn{
+    width: 100%;
+  }
+  .dropbtn{
+    float: right;
+    margin-right: 50px;
+    height: 30px;
+    width: 30px;
+    color: gray;
+    background-color: black;
+    border-color: gray;
+    cursor: pointer;
+  }
+  header h1 {
+    color: white;
+    font-size: 18px;
+    margin-right: 10px;
+    padding-left: 50px;
+  }
+  header h2 {
+    color: white;
+    font-size: 16px;
+    margin-right: 10px;
+    display: none;
+  }
+  h3 a{
+    display: none;
+    color: gray;
+    font-size: 14px;
+    margin-right: 10px;
+  }
+  h4 a{
+    display: none;
+    font-size: 10px;
+    color: gray;
+  }
+  input{
+    display: none;
+    margin-left: 730PX;
+    height: 15px;
+  }
+  .button{
+    display: none;
+    background-color: transparent;
+    color: green;
+    border-color: green;
+    height: 20px;
+  }
+  .banner{
+    width: 100%;
+    margin: auto;
+    height: 500px;
+    background-color: gray;
+    text-align: center;
+    align-items: center;
+  }
+  .banner h1{
+    display: none;
+    padding-top: 180px;
+    color: white;
+  }
+  .banner p{
+    display: none;
+    color: white;
+  }
+  .banner button{
+    display: none;
+    background-color: royalblue;
+    border-width: 0px;
+    color: white;
+    height: 30px;
+    margin-top: 50px;
+    width: 80px;
+  }
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  .prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  .eve{
+    height: 1100px;
+    width: 100%;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin: auto;
+    text-align: center;
+  }
+  .eve article{
+    height: 300px;
+    width: 100%;
+    padding-top:70px;
+  }
+  .eve article img{
+    height: 120px;
+  }
+  .eve h2 {
+    color: gray;
+    font-size: 20px;
+    margin-top: 10px;
+  }
+  .eve p{
+    font-size: 14px;
+    color: gray;
+    margin-top: 10px;
+    margin-right: 30px;
+    margin-left: 30px;
+  }
+  .eve article button{
+    height: 30px;
+    width: 100px;
+    margin-top: 10px;
+    color: gray;
+    cursor: pointer;
+  }
+  .icons{
+    height: 2490px;
+    width: 100%;
+    margin: auto;
+  }
+  .icon {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+  }
+  .icon h2{
+    color: gray;
+    font-size: 38px;
+    padding-top: 50px;
+  }
+  .icon p{
+    color: gray;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  .img1{
+    width: 100%;
+    height: 450px;
+    padding-right: 30px;
+    padding-top: 30px;
+  }
+  .img4{
+    width: 100%;
+    height: 450px;
+    padding-right: 30px;
+    padding-top: 30px;
+  }
+  .img3{
+    width: 100%;
+    height: 450px;
+    padding-right: 30px;
+    padding-top: 30px;
+  }
+  .img2{
+    display: none;
+  }
+  .footer{
+    height: 10px;
+    width: 100%;
+    display: flex;
+  }
+  .footer div{
+    width: 100%;
+    padding-left: 30px;
+  }
+  .pvt{
+    color: royalblue;
+  }
+  .footer p:last-child a{
+    margin-right: 30px;
+    color: royalblue;
+    float: right;
+
+  }
+}
